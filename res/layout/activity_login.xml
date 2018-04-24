@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/activity_login" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ScrollView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:fillViewport="true" app:layout_weight="1.0">
+        <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content"
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <ImageView app:id="@+id/imageView" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="10dp" app:src="@drawable/regist_header" app:srcCompat="@drawable/login_header" />
+            </LinearLayout>
+            <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_weight="1.0"
+                <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2801">
+                    <TextView app:textSize="18dp" app:padding="5dp" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x3201" app:layout_marginLeft="5dp" app:layout_marginTop="10dp" app:layout_marginRight="30dp" app:layout_marginBottom="20dp" app:text="@string/phone" />
+                    <EditText app:textAppearance="@style/TextAppearance.AppCompat" app:id="@+id/phone" app:background="@color/mm_tab_gray" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1e01" app:layout_marginTop="10dp" app:layout_marginRight="30dp" app:layout_marginBottom="20dp" app:hint="@string/phone_hint" app:maxLines="1" app:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|number|numberSigned|numberDecimal|numberPassword|phone" app:paddingStart="20dp" app:paddingEnd="20dp" />
+                </LinearLayout>
+                <TextView app:textColor="@color/mm_red_e60012" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginTop="10dp" app:layout_marginRight="10dp" app:layout_marginBottom="10dp" app:text="@string/singin_phone" />
+                <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2801">
+                    <TextView app:textSize="18dp" app:padding="5dp" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x3201" app:layout_marginLeft="5dp" app:layout_marginRight="30dp" app:text="@string/password" />
+                    <EditText app:textAppearance="@style/TextAppearance.AppCompat" app:id="@+id/password" app:background="@color/mm_tab_gray" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1e01" app:layout_marginRight="30dp" app:hint="@string/password_hint" app:maxLines="1" app:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" app:paddingStart="20dp" app:paddingEnd="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView app:textSize="20dp" app:textColor="@color/colorPrimary" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/regist" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginTop="10dp" app:layout_marginRight="10dp" app:layout_marginBottom="10dp" app:text="@string/singin2_hint" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/linear2" app:background="@color/mm_org_e95513" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3c01" app:onClick="next">
+        <TextView app:textSize="24dp" app:textColor="0x106000b" app:padding="5dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/sent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xb001">
+    <ImageView android:id="@+id/imageview" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/caffee" android:scaleType="centerCrop" android:layout_weight="1.0" />
+    <View android:id="@+id/view" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x601" android:layout_height="match_parent" />
+    <RelativeLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/view2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="21dp" android:id="@+id/textview1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="美式咖啡(大)" />
+            <TextView android:textSize="16dp" android:textColor="@color/mm_red_e60012" android:id="@+id/textview2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10杯特價$100" />
+            <TextView android:textSize="16dp" android:id="@+id/textview3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="原價45/杯" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

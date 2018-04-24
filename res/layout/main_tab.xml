@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RadioGroup android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/main_radiogroup" android:background="@color/mm_tab_gray" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/radiobutton_feedback" android:text="@string/最新消息" android:drawableTop="@drawable/selector_tab_feeback" style="@style/tab_item_background" />
+        <RadioButton android:id="@+id/radiobutton_events" android:text="@string/活動相簿" android:drawableTop="@drawable/selector_tab_events" style="@style/tab_item_background" />
+        <RadioButton android:id="@+id/radiobutton_preferential" android:text="@string/獨享優惠" android:drawableTop="@drawable/selector_tab_preferential" style="@style/tab_item_background" />
+        <RadioButton android:id="@+id/radiobutton_order" android:text="@string/加入校友會" android:drawableTop="@drawable/selector_tab_orders" style="@style/tab_item_background" />
+        <RadioButton android:id="@+id/radiobutton_setting" android:text="@string/更多服務" android:drawableTop="@drawable/selector_tab_setting" style="@style/tab_item_background" />
+        <RadioButton android:id="@+id/nowork" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x1" android:text="@string/更多服務" android:drawableTop="@drawable/selector_tab_setting" />
+    </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xb001">
+        <android.support.v4.view.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xb001" />
+        <com.viewpagerindicator.CirclePageIndicator android:id="@+id/circlepageindicator" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

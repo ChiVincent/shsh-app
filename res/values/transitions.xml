@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <transition name="change_image_transform">res/transition/change_image_transform.xml</transition>
+    <transition name="explode">res/transition/explode.xml</transition>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:id="@+id/activity_product_detail" app:layout_width="match_parent" app:layout_height="match_parent">
+    <RelativeLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:paddingLeft="20dp" app:paddingRight="20dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2e01">
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+            <TextView app:textSize="21dp" app:textColor="@color/mm_red_e60012" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/product_description" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View app:background="@color/mm_gray_cccccc" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x101" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" />
+    <ScrollView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:fillViewport="true" app:layout_weight="1.0">
+        <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:baselineAligned="false">
+            <ImageView app:id="@+id/imageview" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0xa001" app:layout_margin="15dp" app:src="@drawable/caffee" app:transitionName="image" />
+            <View app:background="@color/mm_gray_cccccc" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x101" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" />
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_weight="1.0">
+                <TextView app:textSize="21dp" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/textview_title" app:padding="3dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginTop="20dp" app:layout_marginRight="10dp" app:text="美式咖啡" />
+                <com.gameball.tools.MMAutoHideTextView app:textSize="16dp" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/textview_subtitle" app:padding="3dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" app:text="一組10入/特價9999元" />
+                <com.gameball.tools.MMAutoHideTextView app:textSize="16dp" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/textview_subtitle2" app:padding="3dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" app:text="一組10入/特價9999元" />
+                <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="10dp">
+                    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="20dp" app:src="@drawable/btn_subtract" app:onClick="reduce" />
+                    <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                        <com.gameball.tools.MMNumberView app:orientation="horizontal" app:id="@+id/number_view" app:layout_width="wrap_content" app:layout_height="wrap_content" app:max_warning="@string/reach_max_quantity" app:number="1" />
+                        <TextView app:textSize="14dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/set" />
+                    </LinearLayout>
+                    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="20dp" app:src="@drawable/btn_add" app:onClick="increase" />
+                </LinearLayout>
+                <TextView app:textSize="14dp" app:textColor="@color/mm_red_e60012" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/textview_total_money" app:padding="3dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" app:text="付款金額:0" />
+                <TextView app:textSize="14dp" app:textColor="@color/mm_gray_989898" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/textview_list_price" app:padding="3dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" app:text="付款金額:0" />
+                <com.gameball.tools.MMAutoHideTextView app:textSize="14dp" app:textColor="@color/mm_red_e60012" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/textview_subtitle3" app:padding="3dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" app:layout_marginBottom="20dp" app:text="付款金額:0" />
+            </LinearLayout>
+            <View app:background="@color/mm_gray_cccccc" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x101" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" />
+            <TextView app:textSize="14dp" app:textColor="@color/mm_gray_989898" app:padding="5dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/buy_hint" />
+            <LinearLayout app:orientation="vertical" app:padding="20dp" app:layout_width="match_parent" app:layout_height="wrap_content"
+                <LinearLayout app:layout_width="wrap_content" app:layout_height="wrap_content">
+                    <TextView app:textSize="16dp" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/textview_specification" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/specification" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3c01"
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:background="@color/mm_black_3d3d3d" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3c01" app:scaleType="center" app:layout_weight="1.0" app:onClick="cancel">
+            <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/btn_cancel" />
+            <TextView app:textSize="24dp" app:textColor="0x106000b" app:padding="5dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/back" />
+        </LinearLayout>
+        <LinearLayout app:textSize="30dp" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:background="@color/mm_red_e60012" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3c01" app:src="@drawable/btn_ok" app:scaleType="center" app:text="@string/next" app:layout_weight="1.0" app:onClick="ok">
+            <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/btn_ok" />
+            <TextView app:textSize="24dp" app:textColor="0x106000b" app:padding="5dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/buy_now" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

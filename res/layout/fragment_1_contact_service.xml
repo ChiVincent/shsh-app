@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:padding="30dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="18dp" android:autoLink="web|email|phone|map|all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_service_content1" />
+            <ImageView android:id="@+id/imageview_line" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_margin="20dp" android:src="@drawable/logo_linetext_icon" />
+            <TextView android:textSize="18dp" android:autoLink="web|email|phone|map|all" android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_service_content2" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

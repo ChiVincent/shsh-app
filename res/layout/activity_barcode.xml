@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:id="@+id/activity_product_detail" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.github.rongi.rotate_layout.layout.RotateLayout app:layout_width="match_parent" app:layout_height="match_parent" app:layout_weight="1.0" app:angle="0">
+        <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:padding="20dp" app:layout_width="match_parent" app:layout_height="match_parent" app:baselineAligned="false" app:layout_weight="1.0">
+            <TextView app:textSize="16dp" app:textColor="@color/mm_red_e60012" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/textview_first_barcode_type" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/first_barcode" />
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="5dp" app:layout_weight="1.0">
+                <ImageView app:id="@+id/imageview_first_barcode" app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/ico_opening_1" app:scaleType="fitXY" app:adjustViewBounds="true" app:minHeight="100dp" app:layout_weight="1.0" />
+                <TextView app:textSize="22dp" app:textColor="@color/mm_black_3d3d3d" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/justifytextview_first_barcode" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="86010021" />
+            </LinearLayout>
+            <TextView app:textSize="16dp" app:textColor="@color/mm_red_e60012" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/textview_second_barcode_type" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/second_barcode" />
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="5dp" app:layout_weight="1.0">
+                <ImageView app:id="@+id/imageview_second_barcode" app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/ico_opening_1" app:scaleType="fitXY" app:adjustViewBounds="true" app:minHeight="100dp" app:layout_weight="1.0" />
+                <TextView app:textSize="22dp" app:textColor="@color/mm_black_3d3d3d" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/justifytextview_second_barcode" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="1011942991270" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.github.rongi.rotate_layout.layout.RotateLayout>
+    <TextView app:textSize="14dp" app:textColor="@color/mm_black_3d3d3d" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:padding="10dp" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/barcode_hint" />
+    <LinearLayout app:orientation="horizontal" app:visibility="visible" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3c01">
+        <ImageView app:textSize="30dp" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:background="@color/mm_black_3d3d3d" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3c01" app:src="@drawable/btn_back" app:scaleType="center" app:layout_weight="1.0" app:onClick="cancel" />
+        <ImageView app:textSize="30dp" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:background="@color/mm_red_e60012" app:visibility="gone" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3c01" app:src="@drawable/btn_ok" app:scaleType="center" app:text="@string/next" app:layout_weight="1.0" app:onClick="ok" />
+    </LinearLayout>
+</LinearLayout>
